@@ -12,7 +12,7 @@ int main()
 	if( allocated_memory )
 		log("[ ! ] memory allocated on 0x%" PRIXPTR "\n", reinterpret_cast< uintptr_t > ( allocated_memory ) );
 	
-    log("[ ! ] waiting for the filling of the shellcode\n");
+    	log("[ ! ] waiting for the filling of the shellcode\n");
 
 	init_shellcode( allocated_memory, peb_shellcode );
 
